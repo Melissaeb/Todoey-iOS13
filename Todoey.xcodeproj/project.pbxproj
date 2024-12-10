@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		481DC9912D013C3B00ED7D1C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 481DC98F2D013C3B00ED7D1C /* DataModel.xcdatamodeld */; };
+		481E1B802D08E1CD006A61D9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 481E1B7F2D08E1CD006A61D9 /* RealmSwift */; };
+		481E1B842D08E496006A61D9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 481E1B832D08E496006A61D9 /* RealmSwift */; };
+		481E1B882D08E4AB006A61D9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 481E1B872D08E4AB006A61D9 /* RealmSwift */; };
+		481E1B8A2D08E4F9006A61D9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 481E1B892D08E4F9006A61D9 /* RealmSwift */; };
+		481E1B8B2D08E557006A61D9 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 481E1B892D08E4F9006A61D9 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		481E1B8F2D08EB23006A61D9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E1B8E2D08EB23006A61D9 /* Item.swift */; };
+		481E1B912D08EB33006A61D9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E1B902D08EB33006A61D9 /* Category.swift */; };
 		48DF08162D07E7660099B2D5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF08152D07E7660099B2D5 /* CategoryViewController.swift */; };
 		EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4F9239524DB00FB933B /* AppDelegate.swift */; };
 		EB2BE4FE239524DB00FB933B /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4FD239524DB00FB933B /* TodoListViewController.swift */; };
@@ -16,8 +22,23 @@
 		EB2BE506239524DC00FB933B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2BE504239524DC00FB933B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		481E1B8C2D08E557006A61D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				481E1B8B2D08E557006A61D9 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		481DC9902D013C3B00ED7D1C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		481E1B8E2D08EB23006A61D9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		481E1B902D08EB33006A61D9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		48DF08152D07E7660099B2D5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		EB2BE4F6239524DB00FB933B /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2BE4F9239524DB00FB933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481E1B8A2D08E4F9006A61D9 /* RealmSwift in Frameworks */,
+				481E1B842D08E496006A61D9 /* RealmSwift in Frameworks */,
+				481E1B802D08E1CD006A61D9 /* RealmSwift in Frameworks */,
+				481E1B882D08E4AB006A61D9 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +67,8 @@
 		48AE27772D00117900EF4CF2 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				481DC98F2D013C3B00ED7D1C /* DataModel.xcdatamodeld */,
+				481E1B902D08EB33006A61D9 /* Category.swift */,
+				481E1B8E2D08EB23006A61D9 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -92,11 +118,11 @@
 		EB2BE4F8239524DB00FB933B /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
+				EB2BE4F9239524DB00FB933B /* AppDelegate.swift */,
 				48AE277D2D0011F600EF4CF2 /* Supporting Files */,
 				48AE277C2D0011EB00EF4CF2 /* Views */,
 				48AE277B2D0011E100EF4CF2 /* Controllers */,
 				48AE27772D00117900EF4CF2 /* Data Model */,
-				EB2BE4F9239524DB00FB933B /* AppDelegate.swift */,
 				EB2BE507239524DC00FB933B /* Info.plist */,
 			);
 			path = Todoey;
@@ -112,6 +138,7 @@
 				EB2BE4F2239524DB00FB933B /* Sources */,
 				EB2BE4F3239524DB00FB933B /* Frameworks */,
 				EB2BE4F4239524DB00FB933B /* Resources */,
+				481E1B8C2D08E557006A61D9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,9 @@
 				Base,
 			);
 			mainGroup = EB2BE4ED239524DB00FB933B;
+			packageReferences = (
+				481E1B7C2D08E1CD006A61D9 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = EB2BE4F7239524DB00FB933B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -173,10 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481E1B8F2D08EB23006A61D9 /* Item.swift in Sources */,
 				48DF08162D07E7660099B2D5 /* CategoryViewController.swift in Sources */,
 				EB2BE4FE239524DB00FB933B /* TodoListViewController.swift in Sources */,
-				481DC9912D013C3B00ED7D1C /* DataModel.xcdatamodeld in Sources */,
 				EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */,
+				481E1B912D08EB33006A61D9 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,18 +406,39 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCVersionGroup section */
-		481DC98F2D013C3B00ED7D1C /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				481DC9902D013C3B00ED7D1C /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 481DC9902D013C3B00ED7D1C /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+/* Begin XCRemoteSwiftPackageReference section */
+		481E1B7C2D08E1CD006A61D9 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.54.1;
+			};
 		};
-/* End XCVersionGroup section */
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		481E1B7F2D08E1CD006A61D9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 481E1B7C2D08E1CD006A61D9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		481E1B832D08E496006A61D9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 481E1B7C2D08E1CD006A61D9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		481E1B872D08E4AB006A61D9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 481E1B7C2D08E1CD006A61D9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		481E1B892D08E4F9006A61D9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 481E1B7C2D08E1CD006A61D9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB2BE4EE239524DB00FB933B /* Project object */;
 }
