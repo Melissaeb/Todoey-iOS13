@@ -19,15 +19,6 @@ class CategoryViewController: SwipeTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.backgroundColor = .systemBlue
-        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationController?.navigationBar.standardAppearance = navBarAppearance
-        navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
-        navigationController?.navigationBar.tintColor = .white
-        tableView.rowHeight = 80
-        
         loadCategories()
     }
 

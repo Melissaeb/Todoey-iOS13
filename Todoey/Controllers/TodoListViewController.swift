@@ -24,13 +24,6 @@ class TodoListViewController: SwipeTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.backgroundColor = .systemBlue
-        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationController?.navigationBar.standardAppearance = navBarAppearance
-        navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
-        tableView.rowHeight = 80
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
