@@ -8,9 +8,11 @@
 
 import Foundation
 import RealmSwift
+import Chameleon
 
 class Category: Object {
     @Persisted var name: String = ""
 //    @Persisted var categoryID = UUID().uuidString
+    @Persisted var color: String = UIColor.randomFlat().hexValue()
     @Persisted var items = List<Item>()
 }

@@ -1,6 +1,15 @@
 {
-  "originHash" : "2a0d55dba3700d18b7251cb009e55a70ba9e0b68abe8850cce0cdc30f0b353da",
+  "originHash" : "111fc66eadc2be57f75fb6c6b5c91d4d95b029c5e5b8f3da7e0a481171a60931",
   "pins" : [
+    {
+      "identity" : "chameleonframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/starkdmi/ChameleonFramework.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "71b36b0dbbd09b923c9e948b73d2492ea6097a68"
+      }
+    },
     {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
